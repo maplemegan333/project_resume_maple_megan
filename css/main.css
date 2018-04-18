@@ -24,30 +24,29 @@ body {
 h1 {
     margin: 0.67em 0 0.25em;
     color: #231123;
+    font-size: 2.5em;
 }
 
 h2 {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin: 0 0 0 0;
-    font-size: 1em;
+    font-size: 1.5em;
     color: #82204a;
 }
 
 h3 {
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    font-size: 1em;
+    font-size: 1.5em;
+    padding-top: 3vh;
 }
 
-#wrapper {
-    background: #55bcbc;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+h4 {
+    font-size: 1.5em;
+    padding-top: 2vh;
 }
+
 
 article {
     margin: 20px;
@@ -58,19 +57,20 @@ article {
     padding: 20px;
 }
 
-.contactInfo {
+.contactInfo,
+.info {
     margin: 1em 0;
 }
 
 .contactInfo a {
     color: #e8db7d;
+    text-decoration: none;
+    display: block;
+    margin: 0 0 0.5em 0;
 }
 
-.contactInfo .separator {
-    display: inline-block;
-    border-left: 1px solid #000000;
-    height: 1em;
-    margin: 0 1em;
+.info p {
+    display: block;
 }
 
 h1,
@@ -80,9 +80,40 @@ h4 {
     font-family: 'Ovo';
 }
 
+img.portrait {
+    width: 50%;
+    margin: 3vh auto 0;
+    height: auto;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 1px solid #000000;
+}
+
 @media (min-width: 840px) {
+
     article {
         width: 800px;
         margin: 5vw auto;
+    }
+
+    img.portrait {
+        width: 25%;
+    }
+
+    .contactInfo,
+    .info {
+        margin: 1em 0;
+    }
+
+    .contactInfo a {
+        color: #e8db7d;
+        text-decoration: none;
+        display: block;
+        margin: 0 0 0.5em 0;
+    }
+
+    .info p {
+        display: block;
     }
 }
